@@ -1,0 +1,68 @@
+*{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.contacts{
+  padding: 30px;
+}
+
+#logo{
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: 650px;
+}
+
+.column {
+    float: left;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+.founderpic{
+    padding-left: 50px;
+    height: 220px;
+}
+
+  .left-even {
+    width: 60%;
+  }
+  
+  .right-even {
+    width: 40%;
+  } 
+
+  .left-odd {
+    width: 40%;
+  }
+
+  .right-odd {
+    width: 60%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#intro{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.partner{
+    width: 190px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+td{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
