@@ -88,13 +88,15 @@ nav ul li a:hover::before {
 }
 
 /* ----------introduction page------------- */
-.intro {
-    width: 90%;
-    padding: 3rem;
-    border:3px #5ea7a3 solid;
+div.intro {
+    
+    width: 80%;
+    padding: 2rem;
+    border:4px #5ea7a3 solid;
     border-radius: 0.4rem;
-    margin: 2rem;
+    margin: 30px;
     background: url(https://wallpaperaccess.com/full/2312687.png) no-repeat;
+    text-align: center;
 }
 
 .intro-heading {
@@ -106,3 +108,52 @@ nav ul li a:hover::before {
     font-size: 2vw;
     text-align: center;
 }
+
+
+
+/* ---------founders page------------- */
+
+.founderpic {
+    width:10rem;
+    }
+
+.row{
+    padding-top: 1.2rem;
+    width: auto;
+  }
+  
+  .column {
+      float: left;
+      padding-top: 15px;
+      padding-left: 100px;
+    }
+    
+    .left-even {
+      width: 65%;
+    }
+    
+    .right-even {
+      width: 30%;
+    } 
+  
+    .left-odd {
+      width: 30%;
+    }
+  
+    .right-odd {
+      width: 65%;
+    }
+
+
+    /* -----media queries------ */
+    @media (max-width : 1020px)
+    {
+        .founderpic {
+            display: block;
+        }
+        .right-odd{
+            display: block;
+        }
+
+
+    }
