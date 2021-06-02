@@ -1,17 +1,13 @@
-
+:root {
+    --nav-color : #50be94;
+}
 body {
     margin:0;
     font-family: 'Open Sans',sans-serif;
     font-weight: 300;
 }
-
-.container {
-    width: 80%;
-    margin: 0  auto;
-}
-
 header {
-    background: #bab39b;
+    background: var(--nav-color);
 }
 
 header::after {
@@ -20,6 +16,13 @@ header::after {
     
     clear: both;
 }
+.container {
+    width: 80%;
+    margin: 0  auto;
+}
+
+
+  /* --------logo------------ */
 
 .logo {
     float: left;
@@ -32,7 +35,13 @@ header::after {
     text-decoration: none;
     color: black;
 }
+.logo .logo-link {
+    color:black;
+    background: inherit;
+    text-decoration: none;
+}
 
+/* --------navbar--------- */
 nav {
     float: right;
 
@@ -76,4 +85,24 @@ nav ul li a::before {
 }
 nav ul li a:hover::before {
     width: 100%;
+}
+
+/* ----------introduction page------------- */
+.intro {
+    width: 90%;
+    padding: 3rem;
+    border:3px #5ea7a3 solid;
+    border-radius: 0.4rem;
+    margin: 2rem;
+    background: url(https://wallpaperaccess.com/full/2312687.png) no-repeat;
+}
+
+.intro-heading {
+    font-family: 'Libre', 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 2rem;
+}
+.intro-para {
+    font-size: 2vw;
+    text-align: center;
 }
