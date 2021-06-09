@@ -13,6 +13,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <title>Epsilon Competitions</title>
 </head>
+
+<style>
+  * {
+    box-sizing: border-box;
+    
+    
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    background-image: linear-gradient(to right top, #c888ad, #b17fac, #9777a9, #7b6fa4, #5d689c, #496fa2, #3176a5, #067ca4, #0092ae, #1ba7b3, #46bcb4, #6fcfb2);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 5px;
+    text-align: center;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 100px 100px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  </style>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="index.html">Epsilon Competitions</a>
@@ -39,25 +102,55 @@
       </ul>
     </div>
   </nav>
-    <table class="table">
+
+  <div class="header">
+    <h1>Our Partners</h1>
+    
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="./images/Alacrous.jpeg"" style="width:100%">
+      <img src="./images/bridges.jpeg" style="width:100%">
+      <img src="./images/girlup.jpeg" style="width:100%">
+      <img src="./images/maunitvanirakarn.jpeg" style="width:100%">
+     
+    </div>
+    <div class="column">
+      <img src="./images/Hotdogs.jpeg" style="width:100%">
+      <img src="./images/Janus.jpeg" style="width:100%">
+      <img src="./images/pennedpeeps.jpeg" style="width:100%">
+      <img src="./images/mysafecircle.jpeg" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="./images/Sanjeevani.jpeg" style="width:100%">
+      <img src="./images/theperiodsociety.jpeg" style="width:100%">
+      <img src="./images/Bringthechange.jpeg" style="width:100%">
+      <img src="./images/thehealthcave.jpeg" style="width:100%">
+         </div>
+    
+  </div>
+
+    <!-- <table class="table">
       <tr>
-        <td><img class="partner" src="Alacrous.jpeg" alt=""></td>
-        <td><img class="partner" src="bridges.jpeg" alt=""></td>
-        <td><img class="partner" src="girlup.jpeg" alt=""></td>
-        <td><img class="partner" src="maunitvanirakarn.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/Alacrous.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/bridges.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/girlup.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/maunitvanirakarn.jpeg" alt=""></td>
       </tr>
       <tr>
-        <td><img class="partner" src="Hotdogs.jpeg" alt=""></td>
-        <td><img class="partner" src="Janus.jpeg" alt=""></td>
-        <td><img class="partner" src="pennedpeeps.jpeg" alt=""></td>
-        <td><img class="partner" src="mysafecircle.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/Hotdogs.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/Janus.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/pennedpeeps.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/mysafecircle.jpeg" alt=""></td>
       </tr>
       <tr>
-        <td><img class="partner" src="Sanjeevani.jpeg" alt=""></td>
-        <td><img class="partner" src="theperiodsociety.jpeg" alt=""></td>
-        <td><img class="partner" src="Bringthechange.jpeg" alt=""></td>
-        <td><img class="partner" src="thehealthcave.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/Sanjeevani.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/theperiodsociety.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/Bringthechange.jpeg" alt=""></td>
+        <td><img class="partner" src="./images/thehealthcave.jpeg" alt=""></td>
       </tr>
-    </table>  
+    </table>   -->
 </body>
 </html>

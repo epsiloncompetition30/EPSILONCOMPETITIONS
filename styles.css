@@ -46,44 +46,30 @@ nav{
 
 
 /*---------- INTRO OF FOUNDERS--------- */
-.row{
-  padding-top: 20px;
-  width: 1500px;
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.founder-img{
+  width:80%;
+  height:auto;
+}
+.box{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width:25rem;
+  min-width:18rem;
+  margin: 40px;
+  text-align: center;
+
 }
 
-.column {
-    float: left;
-    padding-top: 15px;
-    padding-left: 100px;
-  }
-  
-.founderpic{
-    padding: 15px;
-    height: 275px;
-}
-
-  .left-even {
-    width: 65%;
-  }
-  
-  .right-even {
-    width: 30%;
-  } 
-
-  .left-odd {
-    width: 30%;
-  }
-
-  .right-odd {
-    width: 65%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 /* ------------INTRODUCTION PAGE---------------- */
 div.intro {
     
@@ -92,7 +78,7 @@ div.intro {
   border:4px #5ea7a3 solid;
   border-radius: 0.4rem;
   margin: 30px;
-  background: url(https://wallpaperaccess.com/full/2312687.png) no-repeat;
+  background: url(https://www.xmple.com/wallpaper/linear-white-gradient-blue-1920x1080-c2-b0c4de-fff5ee-a-60-f-14.svg) repeat;
   text-align: center;
 }
 div.intro .intro-heading{
@@ -106,13 +92,4 @@ div.intro .intro-para {
 
 
 /* -----PARTNER WITH US---------- */
-.partner{
-    width: 190px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
-td{
-    margin-left: auto;
-    margin-right: auto;
-}
