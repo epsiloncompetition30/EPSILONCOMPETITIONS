@@ -1,78 +1,95 @@
 *{
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Open Sans', serif;
 }
 
+
+
+/* ------CONTACT PAGE--------- */
 .contacts{
   padding: 30px;
 }
 
 /* change the background color */
 nav{
-  background-color:burlywood;
+  background-color:#87cade;
+  font-weight: 1000;
+  font-size: 1.3rem;
 }
 
-
+/*------- LOGO OF THE HOME PAGE--------- */
 #logo{
     display: block;
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 650px;
-    height: 650px;
+    width:50rem;
 }
-
-.row{
-  padding-top: 20px;
-  width: 1500px;
-}
-
-.column {
-    float: left;
-    padding-top: 15px;
-    padding-left: 100px;
+/* ------MEDIA QUERY FOR LOGO----------- */
+@media (max-width : 1020px) {
+  #logo {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    width: 15rem;
+    text-align: center;
+    
   }
+  div.intro {
+    max-width: auto;
+  }
+  div.intro .intro-para {
+    font-size: 1rem;
+  }
+  div.intro .intro-para {
+    font-size: 0.5rem;
+  }
+}
+
+
+/*---------- INTRO OF FOUNDERS--------- */
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   
-.founderpic{
-    padding: 15px;
-    height: 275px;
+}
+.founder-img{
+  width:80%;
+  height:auto;
+}
+.box{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width:25rem;
+  min-width:18rem;
+  margin: 40px;
+  text-align: center;
+
 }
 
-  .left-even {
-    width: 65%;
-  }
+/* ------------INTRODUCTION PAGE---------------- */
+div.intro {
+    
+  width: 90%;
+  padding: 2rem;
+  border:4px #5ea7a3 solid;
+  border-radius: 0.4rem;
+  margin: 30px;
+  background: url(https://www.xmple.com/wallpaper/linear-white-gradient-blue-1920x1080-c2-b0c4de-fff5ee-a-60-f-14.svg) repeat;
+  text-align: center;
+}
+div.intro .intro-heading{
+  font-size: 3rem;
+  font-weight: 600;
   
-  .right-even {
-    width: 30%;
-  } 
-
-  .left-odd {
-    width: 30%;
-  }
-
-  .right-odd {
-    width: 65%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-#intro{
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+}
+div.intro .intro-para {
+  font-size: 2rem;
 }
 
-.partner{
-    width: 190px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
-td{
-    margin-left: auto;
-    margin-right: auto;
-}
+/* -----PARTNER WITH US---------- */
+

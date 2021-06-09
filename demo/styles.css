@@ -1,0 +1,159 @@
+:root {
+    --nav-color : #50be94;
+}
+body {
+    margin:0;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+}
+header {
+    background: var(--nav-color);
+}
+
+header::after {
+    content: '';
+    display: table;
+    
+    clear: both;
+}
+.container {
+    width: 80%;
+    margin: 0  auto;
+}
+
+
+  /* --------logo------------ */
+
+.logo {
+    float: left;
+    padding:10px;
+    text-decoration: none;
+    color: black;
+   
+}
+.logo:hover {
+    text-decoration: none;
+    color: black;
+}
+.logo .logo-link {
+    color:black;
+    background: inherit;
+    text-decoration: none;
+}
+
+/* --------navbar--------- */
+nav {
+    float: right;
+
+}
+
+nav ul {
+    margin:0;
+    padding: 0%;
+    list-style: none;
+    
+}
+nav li {
+    display: inline-block;
+    margin-left: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width:0%;
+    background-color:#000 ;
+    top: 0%;
+    position: absolute;
+    transition: all ease-in-out 100ms;
+}
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/* ----------introduction page------------- */
+div.intro {
+    
+    width: 80%;
+    padding: 2rem;
+    border:4px #5ea7a3 solid;
+    border-radius: 0.4rem;
+    margin: 30px;
+    background: url(https://wallpaperaccess.com/full/2312687.png) no-repeat;
+    text-align: center;
+}
+
+.intro-heading {
+    font-family: 'Libre', 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 2rem;
+}
+.intro-para {
+    font-size: 2vw;
+    text-align: center;
+}
+
+
+
+/* ---------founders page------------- */
+
+.founderpic {
+    width:10rem;
+    }
+
+.row{
+    padding-top: 1.2rem;
+    width: auto;
+  }
+  
+  .column {
+      float: left;
+      padding-top: 15px;
+      padding-left: 100px;
+    }
+    
+    .left-even {
+      width: 65%;
+    }
+    
+    .right-even {
+      width: 30%;
+    } 
+  
+    .left-odd {
+      width: 30%;
+    }
+  
+    .right-odd {
+      width: 65%;
+    }
+
+
+    /* -----media queries------ */
+    @media (max-width : 1020px)
+    {
+        .founderpic {
+            display: block;
+        }
+        .right-odd{
+            display: block;
+        }
+
+
+    }
